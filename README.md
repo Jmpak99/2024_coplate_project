@@ -1,4 +1,4 @@
-<div><img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Django%20MindNote%20" /></div>
+<div><img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Django%20Coplate%20" /></div>
 
 
 
