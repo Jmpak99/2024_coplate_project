@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from .validators import validate_no_special_characters, validate_restaurant_lisk
+from .validators import validate_no_special_characters, validate_rastaurant_link
 
 # Create your models here.
 class User(AbstractUser):
@@ -18,8 +18,8 @@ class User(AbstractUser):
 class Review(models.Model):
     title = models.CharField(max_length=30)
     restaurant_name = models.CharField(max_length=20)
-    restaurant_link = models.URLField(validators=[validate_restaurant_lisk])
-    
+    restaurant_link = models.URLField(validators=[validate_rastaurant_link])
+
     RATING_CHOICES = [
         (1, 1),
         (2, 2),
@@ -32,7 +32,6 @@ class Review(models.Model):
     image1 = models.ImageField()
     image2 = models.ImageField()
     image3 = models.ImageField()
-
     content = models.TextField()
     dt_created = models.DateTimeField(auto_now_add=True)
     dt_updated = models.DateTimeField(auto_now=True)
@@ -40,5 +39,5 @@ class Review(models.Model):
     def __str__(self):
         return self.title
     
-    
+
     
