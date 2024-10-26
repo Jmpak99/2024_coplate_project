@@ -13,6 +13,7 @@ from allauth.account.models import EmailAddress
 from allauth.account.views import PasswordChangeView
 from coplate.models import Review
 from coplate.forms import ReviewForm
+from coplate.functions import confirmation_required_redirect
 
 # Create your views here.
 class IndexView(ListView):
@@ -33,6 +34,12 @@ class ReviewCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     model = Review
     form_class = ReviewForm
     template_name = "coplate/review_form.html"
+
+    # 로그인 안되어 있는 유저는 로그인 페이지로 리다이렉트
+    redirect_unauthenticated_users = True
+
+    # 로그인이 되어있지만 인증이 안된 유저는 'confirmation_required_redirect' 로직에 따라 처리
+    raise_exception = confirmation_required_redirect
 
     def form_valid(self, form):
         form.instance.author = self.request.user
