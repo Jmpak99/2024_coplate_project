@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="🏠 홈"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/favoriteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="⭐ 즐겨찾기"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="⚙️ 설정"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center" />
+</LinearLayout>

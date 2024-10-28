@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="route" >
+        <item>-</item>
+        <item>경부선</item>
+        <item>남해선</item>
+        <item>광주대구ㆍ무안광주선</item>
+        <item>남해제2지선</item>
+        <item>당진영덕선</item>
+        <item>대구포항선</item>
+        <item>대전통영선</item>
+        <item>동해선</item>
+        <item>부산외곽순환선</item>
+        <item>서울양양선</item>
+        <item>서해안선</item>
+        <item>수도권제1순환선</item>
+        <item>순천완주선</item>
+        <item>영동선</item>
+        <item>중부내륙선</item>
+        <item>중부내륙선의지선</item>
+        <item>중앙선</item>
+        <item>평택제천선</item>
+        <item>함양울산선</item>
+        <item>호남선</item>
+        <item>호남선의지선</item>
+    </string-array>
+
+    <string-array name="facilities" >
+        <item>-</item>
+        <item>수유실</item>
+        <item>수면실</item>
+        <item>샤워실</item>
+        <item>세탁실</item>
+        <item>농산물판매장</item>
+        <item>병원</item>
+        <item>약국</item>
+        <item>쉼터</item>
+        <item>이발소</item>
+    </string-array>
+
+
+</resources>

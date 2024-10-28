@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/mainUserPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_profile"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/mainUserName"
+                android:layout_width="76dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="사용자명" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/addReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add_review"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:id="@+id/reviewListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 리뷰"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            />
+
+        <TextView
+            android:id="@+id/ratingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴게소 총평"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/border_layout">
+
+                <TextView
+                    android:id="@+id/avgRatingTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="평균평점"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/avgRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/border_layout">
+
+                <TextView
+                    android:id="@+id/satisfactionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="고객만족도"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/satisfaction"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <include layout="@layout/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

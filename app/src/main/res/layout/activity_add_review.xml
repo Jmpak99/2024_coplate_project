@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddReviewActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddReviewActivity"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/mainUserPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_profile"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/mainUserName"
+                android:layout_width="76dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="사용자명" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/reviewRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/editReview"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:ems="10"
+            android:inputType="text"
+            android:gravity="top"
+            android:hint="리뷰를 작성해주세요" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성"
+            />
+
+    </LinearLayout>
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

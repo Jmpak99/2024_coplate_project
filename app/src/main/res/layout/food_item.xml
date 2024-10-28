@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/foodlist"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/s1a000000sw1cr6"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/r79bui417kgs_rl"
+            android:layout_width="163dp"
+            android:layout_height="88dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/foodimage"
+                android:layout_width="163dp"
+                android:layout_height="88dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/add" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rs7tca17hqj"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tl6br6bad000000"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="7dp">
+
+                    <TextView
+                        android:id="@+id/rvap4afd30jo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="추천: 8 / 비추천: 1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/r3nfqm74fwh7"
+            android:layout_width="138dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="9dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rlvvbyo308cl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:text="치즈라면"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/r47fem66nqg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가격: 6000원"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/r2r8j6ab120f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="16dp"
+            android:text="👍"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rfip7xyyb2bk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="61dp"
+            android:text="👎"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
